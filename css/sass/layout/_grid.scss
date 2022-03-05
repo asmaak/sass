@@ -1,0 +1,23 @@
+*{
+    @include prefixer(box-sizing,border-box,moz webkit)
+}
+
+
+.container{
+    padding-left:15px;
+    padding-right:15px;
+    margin:auto;
+    position:relative;
+    @media #{$minSmall}{
+        width:750px;
+    }
+    @media #{$minMeduim}{
+        width:950px;
+    }
+    @media #{$minLarge}{
+        width:1170px;
+    }
+}
+.clearfix{
+    clear:both;
+}

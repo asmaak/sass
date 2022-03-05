@@ -1,0 +1,38 @@
+@mixin minMedium {
+    @media(min-width: 992px) {
+        @content;
+    }
+}
+
+
+//overlay
+@mixin overLay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+//prefixer
+@mixin prefixer($property,$value,$prefixes:()){
+    @each $prefix in $prefixes{
+        #{'-'+$prefix+'-'+$property}:$value;
+    }
+    #{$property}:$value;
+}
+
+//animation
+@mixin keyFrame($animation_name){
+    @-webkit-keyframes #{$animation_name}{
+       @content;
+    }
+    @-moz-keyframes #{$animation_name}{
+        @content;
+    }
+    @-o-keyframes #{$animation_name}{
+        @content;
+    }
+    @keyframes #{$animation_name}{
+        @content;
+    }
+}

@@ -1,0 +1,76 @@
+/*
+Error: Undefined mixin 'prefixer'.
+        on line 10 of E:/elzero/sass-project/css/sass/pages/homepage.scss, in `prefixer'
+        from line 10 of E:/elzero/sass-project/css/sass/pages/homepage.scss
+
+5:     border:1px solid black;
+6:     padding:10px;
+7:     position:relative;
+8:     box-shadow:10px 10px 10px #ccc;
+9:     animation: fadeInOut 2s infinite linear;
+10:     @include prefixer(animation,fadeInOut 2s infinite linear, webkit moz o ms );
+11:     @include prefixer(box-shadow ,10px 10px 10px #ccc , webkit moz o ms );
+12:     .overlay{
+13:         @include overLay;
+14:         background-color:rgba($redColor,0.4);
+15:         color:black;
+
+Backtrace:
+E:/elzero/sass-project/css/sass/pages/homepage.scss:10:in `prefixer'
+E:/elzero/sass-project/css/sass/pages/homepage.scss:10
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'prefixer'.\A         on line 10 of E:/elzero/sass-project/css/sass/pages/homepage.scss, in `prefixer'\A         from line 10 of E:/elzero/sass-project/css/sass/pages/homepage.scss\A \A 5:     border:1px solid black;\A 6:     padding:10px;\A 7:     position:relative;\A 8:     box-shadow:10px 10px 10px #ccc;\A 9:     animation: fadeInOut 2s infinite linear;\A 10:     @include prefixer(animation,fadeInOut 2s infinite linear, webkit moz o ms );\A 11:     @include prefixer(box-shadow ,10px 10px 10px #ccc , webkit moz o ms );\A 12:     .overlay{\A 13:         @include overLay;\A 14:         background-color:rgba($redColor,0.4);\A 15:         color:black;"; }

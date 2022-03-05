@@ -1,0 +1,26 @@
+
+.head-with-border{
+    position:relative;
+    h2{
+    text-align: center;
+    margin:30px auto;
+    background-color:$redColor;
+    color:#fff;
+    width:400px;
+    border-radius: 15px;
+    padding:10px 15px;
+        text-transform: uppercase;
+        &:before{
+            content:'';
+            position:absolute;
+            height:1.5px;
+            top:50%;
+            left:0px;
+            background-color:$greyColor;
+            width:100%;
+            z-index: -1;
+            
+        }
+    }
+    
+}
